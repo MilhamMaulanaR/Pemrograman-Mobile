@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_background"
+            android:layout_width="412dp"
+            android:layout_height="195dp"
+            android:src="@drawable/decainactv2"
+            />
+
+        <TextView
+            android:id="@+id/textViewUsers"
+            android:layout_width="109dp"
+            android:layout_height="30dp"
+            android:text="Hello Users"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="67dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="FIND BEST RECIPE FOR COOKING"
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="97dp"
+            android:layout_marginLeft="33dp"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:listitem="@layout_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

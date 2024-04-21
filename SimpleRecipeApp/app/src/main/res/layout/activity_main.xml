@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Learn Cooking Experience Like A Chef"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"/>
+
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Learn new recipes ad make delicious dishes easily"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="254dp"
+        android:layout_height="61dp"
+        android:text="Get Started"
+        android:onClick="start"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/btnstart"
+        android:layout_gravity="center"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="9dp"/>
+
+</LinearLayout>
